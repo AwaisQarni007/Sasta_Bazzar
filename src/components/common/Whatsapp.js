@@ -12,11 +12,11 @@ const Whastapp = () => {
   };
   return (
     <>
-    <div className="chat_float">
+    {/* <div className="chat_float">
       <button onClick={handleChatClick}><i class="fa fa-facebook whatsapp-icon "></i></button>
       <ChatPopup />
           <div className="overlay" onClick={handleClose}></div>
-    </div>
+    </div> */}
       <div
         title="Whatsapp"
         // onClick={handlewhastapp}
