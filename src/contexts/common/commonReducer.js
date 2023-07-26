@@ -7,6 +7,12 @@ const commonReducer = (state, action) => {
                 isFormOpen: action.payload.toggle
             };
 
+        case 'ADMIN_CHECK':
+            return {
+                ...state,
+                isAdmin: action.payload.toggle
+            };
+
 
         case 'SET_FORM_USER_INFO':
             return {

@@ -7,6 +7,7 @@ const commonContext = createContext();
 // Initial State
 const initialState = {
     isFormOpen: false,
+    isAdmin : false,
     formUserInfo: '',
     isSearchOpen: false,
     searchResults: []
@@ -21,6 +22,12 @@ const CommonProvider = ({ children }) => {
     const toggleForm = (toggle) => {
         return dispatch({
             type: 'TOGGLE_FORM',
+            payload: { toggle }
+        });
+    };
+    const adminCheck = (toggle) => {
+        return dispatch({
+            type: 'ADMIN_CHECK',
             payload: { toggle }
         });
     };
@@ -51,6 +58,7 @@ const CommonProvider = ({ children }) => {
     const values = {
         ...state,
         toggleForm,
+        adminCheck,
         setFormUserInfo,
         toggleSearch,
         setSearchResults

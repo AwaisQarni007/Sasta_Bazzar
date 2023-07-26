@@ -7,15 +7,16 @@ import Services from "../components/common/Services";
 
 const Home = () => {
   return (
-    <main>
+    <main  >
       <section id="hero" className="section">
         <HeroSlider />
       </section>
 
       <section id="featured" className="section">
-        <div className="container ">
+        <div className="margin10">
           <SectionsHead heading="Featured Products" />
-          <div className="sub-container glow-on-hover padding2050">
+          {/* <div className="sub-container glow-on-hover padding2050 "> */}
+          <div className="sub-container  padding2050 ">
             <FeaturedSlider />
           </div>
         </div>
@@ -24,7 +25,8 @@ const Home = () => {
       <section id="products" className="section">
         <div className="container">
           <SectionsHead heading="Top Products" />
-          <div className="sub-container glow-on-hover padding2050">
+          {/* <div className="sub-container glow-on-hover padding2050"> */}
+          <div className="sub-container padding2050">
             <TopProducts />
           </div>
         </div>

@@ -6,7 +6,7 @@ import cartContext from '../contexts/cart/cartContext';
 import CartItem from '../components/cart/CartItem';
 import EmptyView from '../components/common/EmptyView';
 import axios from 'axios';
-import { Twilio } from 'twilio';
+// import { Twilio } from 'twilio';
 
 
 const Cart = () => {
@@ -41,37 +41,37 @@ const Cart = () => {
 
 
     const handleCheckout = async () => {
-        const userPhoneNumber = '+923125496244';
-        const myPhoneNumber = '+14065055570';
-        const twilioAccountSid = 'AC750e32a7fc2ddb75240c771549578b6c';
-        const twilioAuthToken = '5b16ccc618f58640ee33339f62022c9c';
+        // const userPhoneNumber = '+923125496244';
+        // const myPhoneNumber = '+14065055570';
+        // const twilioAccountSid = 'AC750e32a7fc2ddb75240c771549578b6c';
+        // const twilioAuthToken = '5b16ccc618f58640ee33339f62022c9c';
     
-        const client = new Twilio(twilioAccountSid, twilioAuthToken);
+        // const client = new Twilio(twilioAccountSid, twilioAuthToken);
     
-        try {
-          // Send order confirmation SMS to the user
-          await client.messages.create({
-            body: 'Your order has been placed. Thank you!',
-            from: myPhoneNumber,
-            to: userPhoneNumber
-          });
+        // try {
+        //   // Send order confirmation SMS to the user
+        //   await client.messages.create({
+        //     body: 'Your order has been placed. Thank you!',
+        //     from: myPhoneNumber,
+        //     to: userPhoneNumber
+        //   });
     
-          // Send notification SMS to myself
-          await client.messages.create({
-            body: 'New order received!',
-            from: myPhoneNumber,
-            to: myPhoneNumber
-          });
+        //   // Send notification SMS to myself
+        //   await client.messages.create({
+        //     body: 'New order received!',
+        //     from: myPhoneNumber,
+        //     to: myPhoneNumber
+        //   });
     
-          // Process the order on the server
-          //const response = await axios.post('/api/orders', {/* order data */});
+        //   // Process the order on the server
+        //   //const response = await axios.post('/api/orders', {/* order data */});
     
-          // Handle the response and display appropriate feedback to the user
-          console.log('Order placed successfully:', response.data);
-        } catch (error) {
-          // Handle any errors that occur during the process
-          console.error('Error placing order:', error);
-        }
+        //   // Handle the response and display appropriate feedback to the user
+        // //   console.log('Order placed successfully:', response.data);
+        // } catch (error) {
+        //   // Handle any errors that occur during the process
+        //   console.error('Error placing order:', error);
+        // }
       };
 
     // const handleButtonClick = () => {

@@ -13,7 +13,7 @@ const Whastapp = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fa fa-whatsapp whatsapp-icon "></i>
+          <i className="fa fa-whatsapp whatsapp-icon "></i>
         </a>
       </div>
     </>

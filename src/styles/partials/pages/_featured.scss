@@ -9,6 +9,10 @@
     @include devices(md) {
         width: 16rem;
     }
+
+    div{
+        margin: 10px 20px
+    }
 }
 
 .featured_swiper {

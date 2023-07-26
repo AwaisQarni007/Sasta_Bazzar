@@ -1,5 +1,7 @@
 #footer {
     background-color: var(--black-color);
+
+// color:black;
     @include padding-y(3rem, 2rem);
 
     .separator {
@@ -9,6 +11,7 @@
 }
 
 .footer_wrapper {
+    color: black;
     padding: 0.5rem 2rem;
     grid-template-columns: 1.4fr repeat(3, 1fr);
     justify-items: center;
@@ -69,7 +72,7 @@
     font-size: 0.95rem;
 
     a {
-        color: #eee;
+        color: black;
         opacity: 0.8;
 
         &:hover {

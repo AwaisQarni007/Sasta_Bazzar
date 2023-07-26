@@ -49,7 +49,8 @@ const TopProducts = () => {
         {products.slice(0, 11).map((item) => (
           <ProductCard key={item.id} {...item} />
         ))}
-        <div className="glow-on-hover">
+        {/* <div className="glow-on-hover"> */}
+        <div className="productCard">
           <div className="card products_card browse_card">
             <Link to="/all-products">
               Browse All <br /> Products <BsArrowRight />

@@ -1,5 +1,8 @@
 .products_wrapper {
+    background: white;
+    color: black;
     @include grid-cols(4, 1fr, 0.7rem);
+
 
     @include devices(lg) {
         @include grid-cols(3, 1fr, 0.7rem);
@@ -15,10 +18,16 @@
 }
 
 .products_filter_tabs {
+    background: white;
+    color: black;
     @include margin-y(1rem, 2rem);
 }
 
+
 .products_card {
+    // margin: 0px 20px;
+    background: white;
+    color: black;
     height: 100%;
     @include bordered(1px, rgba($color: #ffffff, $alpha: 0.4));
     border-radius: 3px;
@@ -41,7 +50,8 @@
 }
 
 .products_img {
-    background: var(--bg-color-2);
+    // background: var(--bg-color-2);
+    background: transparent;
     text-align: center;
     padding: 1rem;
     overflow: hidden;
